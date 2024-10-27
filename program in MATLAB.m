@@ -1070,13 +1070,13 @@ end
 v=0;
 syms x;
 
-v1=sum(r1.^2)*pi;         % double(v1)=  5.4346e+004
-v2=sum(r2.^2)*pi;         % double(v3)=  4.8849e+005;
-v3=sum(r3.^2)*pi;         % double(v4)=  3.2755e+005;
+v1=sum(r1.^2)*pi;         
+v2=sum(r2.^2)*pi;         
+v3=sum(r3.^2)*pi;         
 
 v=v2+v3-v1;
-v=double(v);              % 8.5631e+005
-v=vpa(v,10);              % 856307.0512          
+v=double(v);            
+v=vpa(v,10);                        
 disp('The pixel volume is');
 disp(v);
 
